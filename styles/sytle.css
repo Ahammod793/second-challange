@@ -481,6 +481,15 @@ input::placeholder {
   .our-trainers{
     grid-template-columns: repeat(1, 540px);
   }
+  .overlay{
+    bottom:30px;
+    left: 90px;
+  }
+  .body-padding{
+    padding-left: 1rem;
+    padding-right: 0rem;
+    margin-right: 1rem;
+  }
 
 }
 /* footer started */
