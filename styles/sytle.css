@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+.body-bg{
+  background: rgb(0, 0, 0);
+}
 .body-padding{
   padding-left: 11rem;
   padding-right: 11rem;
@@ -18,8 +21,8 @@
 .videoTutorial{
   display:flex;
   justify-content:center;
-  align-items: center;
-  padding: 20px 23px;
+  align-items: start;
+  padding: 20px 0 20px 15px;
   border-radius: 0.75rem;
   backdrop-filter: blur(4px);
   background: rgba(48, 48, 48, 0.54);
@@ -37,6 +40,11 @@
   border-radius: 42px;
   background: rgb(230, 83, 60);
 }
+.unique1{
+  padding: 16px 40px;
+  width: 225px;
+  border: none;
+}
 .font-1{
   font-size: 18px;
   font-weight: 600;
@@ -46,9 +54,20 @@
   font-size: 16px;
   font-weight: 400;
 }
+.font-3{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.font-4{
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
 .header{
     padding-top: 57px;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 1111, 119, 0.06) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -76,6 +95,9 @@
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
+}
+.manu-bar .bar-icon{
+  display: none;
 }
 .home{
   padding: 8px 20px 8px 20px;
@@ -128,8 +150,9 @@
 }
 .tutorial{
   flex-direction: row;
+  align-items: center;
   top: -210px;
-  left: -140px;
+  left: -100px;
   gap: 1rem;
   width: 190px;
 }
@@ -154,4 +177,144 @@
   flex-direction: column;
   align-items: start;
   width: 210px;
+}
+
+/* media queries for small device */
+@media screen and (max-width:576px){
+  body{
+    max-width: 576px !important;
+  }
+
+  /* .header{
+    position: absolute;
+  } */
+  .body-padding{
+     padding-left: 1rem;
+     padding-right: 0rem;
+     margin-right: 1rem;
+   }
+   .links{
+    display: none;
+   }
+  .manu-bar>.bar-icon{
+     display: block;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .banner-content>.slogan{
+    width: 360px;
+    font-size: 3rem ;
+    padding-right: 200px;
+    margin-top: 0;
+  }
+  .banner-content>.paragraph-1{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    width: 360px;
+  }
+  .tutorial{
+    top: -540px;
+    left: 20px;
+  }
+  
+  .videoWorkOut{
+    top: -990px;
+    left: 300px;
+  }
+  /* first section media query started */
+  
+  
+}
+/* end of media queries */
+
+/* start main body and the first section */
+
+.time-maintain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -180px;
+  color: white;
+  margin-bottom:100px
+}
+.time-maintain .description{
+  max-width: 552px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.time-maintain .exercise{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.time-maintain .option{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;;
+}
+.head{
+  margin-top: 30px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.exercise .option .about{
+  text-align: center;
+  width: 14.4rem;
+} 
+.exercise .option img{
+  position: relative;
+  left: 15px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid rgb(73, 73, 73);
+}
+
+
+/* end main body and the first section */
+
+/* code for the second section of a runner boy */
+
+.runner-boy{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding:40px 32px 40px 54px;
+  gap: 165px;
+}
+.runner{
+  width: 443px;
+  align-items: center;
+  
+}
+.runner-title{
+  text-align: left;
+  width: 354px;
+
+}
+.runner-des{
+  margin: 14px 0 32px 0;
+  line-height: 24px;
+  /* letter-spacing: 0.3px; */
+}
+.runner-boy img{
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+}
+
+@media screen and (max-width:576px){
+.time-maintain>.title, .time-maintain>.description{
+  width: 316px;
+}
+.time-maintain>.exercise{
+  flex-direction: column;
+}
 }
