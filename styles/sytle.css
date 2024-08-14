@@ -40,7 +40,7 @@
   background: rgb(230, 83, 60);
 }
 .unique1{
-  padding: 16px 40px;
+  padding: 16px 48px;
   width: 225px;
   border: none;
   color: white;
@@ -300,6 +300,16 @@
 
 /* end main body and the first section */
 
+/* first-section mediaquery started */
+@media screen and (max-width:576px){
+  .time-maintain>.title, .time-maintain>.description{
+    width: 316px;
+  }
+  .time-maintain>.exercise{
+    flex-direction: column;
+  }
+  }
+  /* end of first-section mediaquery */
 /* code for the second section of a runner boy */
 
 .runner-boy{
@@ -310,6 +320,7 @@
   background: rgb(34,34,34);
   padding:40px 32px 40px 54px;
   gap: 165px;
+  margin-bottom: 100px;
 }
 .runner{
   width: 443px;
@@ -331,9 +342,21 @@
   height: 312px;
   border-radius: 18px;
 }
-
-.BMI-section{
-  margin: 88px 450px;
+/* end of runner boy section  */
+/* mediaquery started */
+@media screen and (max-width:576px){
+  .runner-boy{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 33px;
+  }
+  
+}
+/* mediaquery ended */
+.BMI-title,.BMI-des{
+  margin-left: 340px;
+  width: 620px;
 }
 .BMI-gen{
   display: flex;
@@ -404,16 +427,31 @@ input::placeholder {
   margin-bottom: 55px;
 }
 
-@media screen and (max-width:576px){
-.time-maintain>.title, .time-maintain>.description{
-  width: 316px;
-}
-.time-maintain>.exercise{
-  flex-direction: column;
-}
-}
 
 /* end of second section */
+/* mediaquery started */
+@media screen and (max-width:576px){
+  .BMI-section{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .BMI-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .BMI-title,.BMI-des{
+    margin-left: 10px;
+    width: 320px;
+  }
+  .BMI-gen{
+    flex-direction: column;
+  }
+  
+}
+/* mediaquery ended */
 /*start tem section */
 .teem-section{
   margin-top: 100px;
@@ -433,4 +471,84 @@ input::placeholder {
   width: 350px;
   border-radius: 18px;
   margin-bottom: -45px;
+}
+/*tem section ended*/
+@media screen and (max-width:576px){
+  .teem-section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .our-trainers{
+    grid-template-columns: repeat(1, 540px);
+  }
+
+}
+/* footer started */
+footer{
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 86px;
+}
+.container-footer{
+  padding-bottom: 35px;
+}
+.footer-description{
+  display: flex;
+  justify-content: flex-start;
+  gap: 120px;
+  text-align: start;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 80px;
+
+}
+footer .fitness{
+  font-size: 70px;
+  font-weight: 800;
+}
+footer .fit-description{
+  width: 440px !important;
+  padding-top: 20px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+footer .find-option{
+  display: flex;
+  gap: 152px;
+}
+footer .about-us .started-g{
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+footer .about-us li{
+  margin-top: 20px;
+}
+footer .about-us ul{
+  list-style-type: none;
+}
+
+footer .about-us a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-size: 23px;
+  font-weight: 400;
+}
+footer .copyright{
+  text-align: center;
+  padding-top: 36px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width:576px){
+  .footer-description{
+    flex-direction: column;
+  }
+  .fit-description{
+    width: 345px !important;
+  }
+  .find-option{
+    display: flex;
+    flex-direction: column;
+  }
 }
