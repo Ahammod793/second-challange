@@ -29,7 +29,6 @@
   position: relative;
 }
 .paragraph-1{
-  color: rgba(255, 255, 255, 0.4);
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 24px;
@@ -44,6 +43,7 @@
   padding: 16px 40px;
   width: 225px;
   border: none;
+  color: white;
 }
 .font-1{
   font-size: 18px;
@@ -65,9 +65,31 @@
   font-weight: 900;
   color: white;
 }
+.font-5{
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+}
+.font-6{
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+.overlay {
+  position: relative;
+  bottom:30px;
+  left: 3cqmin;
+  gap: 10px;
+  right: 0;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  z-index: 1000;
+}
 .header{
     padding-top: 57px;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -285,7 +307,7 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 18px;
-  background: rgb(34, 34, 34);
+  background: rgb(34,34,34);
   padding:40px 32px 40px 54px;
   gap: 165px;
 }
@@ -310,6 +332,78 @@
   border-radius: 18px;
 }
 
+.BMI-section{
+  margin: 88px 450px;
+}
+.BMI-gen{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  border-radius: 18px;
+  background: rgb(34,34,34);
+  margin-top: 100px;
+  padding-top: 52px;
+  gap: 175px;
+  gap: 250px;
+}
+.BMI-gen .table{
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+table,th,td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+th,td{
+  text-align: left;
+  width: 160px;
+  height: 41px;
+  padding-left: 20px;
+}
+table th{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+table td{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.calc-form .BMI-calc{
+  padding-top: 14;
+  padding-bottom: 34px;
+}
+.BMI-form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin-bottom: 35px;
+}
+#E{
+  grid-column: span 2;
+}
+.input-form{
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 40px 12px 20px;
+}
+.BMI-form input,.BMI-form select{
+  width: 100%;
+  background-color: inherit !important;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255,0.6);
+}
+input::placeholder {
+  color: rgba(255, 255, 255,0.6);
+}
+.BMI-btn{
+  margin-bottom: 55px;
+}
+
 @media screen and (max-width:576px){
 .time-maintain>.title, .time-maintain>.description{
   width: 316px;
@@ -317,4 +411,26 @@
 .time-maintain>.exercise{
   flex-direction: column;
 }
+}
+
+/* end of second section */
+/*start tem section */
+.teem-section{
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.our-trainers{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.our-trainers img{
+  height: 264px;
+  width: 350px;
+  border-radius: 18px;
+  margin-bottom: -45px;
 }
